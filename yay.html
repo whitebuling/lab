@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa | Innovación y Futuro</title>
+    <style>
+        /* Estilos Globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Barra de Navegación */
+        header {
+            background-color: #1e272e;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #B3B3F1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #B3B3F1;
+        }
+
+        /* Sección Hero (Inicio) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://4kwallpapers.com/images/walls/thumbs_2t/7521.jpg') no-repeat center center/cover;
+            height: 70vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #B3B3F1;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #B3B3F1;
+        }
+
+        /* Secciones Comunes */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #B3B3F1;
+            margin: 10px auto 0;
+        }
+
+        /* Sección Quiénes Somos */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 17px;
+        }
+
+        /* Sección Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #1e272e;
+        }
+
+        /* Sección Contacto */
+        .contact {
+            background-color: #1e272e;
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: #fff;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #11171a;
+            color: #7f8c8d;
+            text-align: center;
+            padding: 60px 0;
+            font-size: 20px;
+        }
+        .tabla-game {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #0b0c10; /* Fondo oscuro como el de tu imagen */
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace; /* O una fuente geométrica */
+        }
+        
+        .tabla-game th, .tabla-game td {
+            border: 1px solid #1f2833;
+            padding: 75px;
+            text-align: left;
+        }
+        
+        /* Color azul/celeste para los títulos y fases */
+        .tabla-game th, .tabla-azul {
+            color: #00ffff; 
+            letter-spacing: 1.5px; /* <-- Aquí se separan las letras */
+        }
+        
+        .tabla-game td {
+            letter-spacing: 1px; /* Espaciado sutil para el resto del texto */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LYng's Lab</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Creamos el Futuro Digital</h2>
+            <p>Volvemos locos con los mejores sueños en juegos.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="container">
+        <h2 class="section-title">Quiénes Somos</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>En <strong>LYng's Lab</strong>, un estudio y empresa que exponemos nuestro sueños y pensamientos que quieremos generar diseñando como videojuegos, quieremos proponer un videojuego a todos los jovenes y adultos, conformando un circulo que conversa y combaten amigable entre si.</p>
+                <p>Nuestro equipo está conformado por profesionales apasionados por el diseño de juego, el desarrollo de contenidos jugables  y la estrategia de generar un nuevo juego con expansion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" style="background-color: #eef2f3;">
+        <div class="container">
+            <h2 class="section-title">Nuestros Mision, Vision y valores</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Mision</h3>
+                    <p>Desarrollar experiencias interactivas que conecten a las personas globalmente, empujando los límites de la tecnología para contar historias que trasciendan la pantalla.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Vision</h3>
+                    <p>Ser el estudio líder reconocido por revolucionar la industria del gaming mediante la integración de IA y realidades inmersivas, creando legados culturales digitales.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Valores</h3>
+                    <p>Innovación:
+                        Cuestionamos lo establecido para crear nuevas mecánicas. 
+                         
+                        Pasión:
+                        Somos jugadores creando para jugadores. 
+                        
+                        Excelencia:
+                        Compromiso absoluto con la calidad técnica y artística. 
+                        
+                        Comunidad:
+                        Escuchamos y crecemos junto a nuestra base de fans. <p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="servicios" style="background-color: #c4ccdb;">
+        <div class="container">
+            <h2 class="section-title">Servicios en dispositivos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h1>PC/Notebook</h1>
+                </div>
+                <div class="service-card">
+                    <h1>PS5/Xbox/Nintendo Switch 1 y 2</h1>
+                    
+                </div>
+                <div class="service-card">
+                    <h1>Mobile/IOS/Android</h1>
+            
+                </div>
+             </div>
+       </div>
+    </section>  
+    <section id="servicios" style="background-color: #CDCDCD;">
+        <div class="container">
+            <h1 class="section-title">nuestro proceso agile</h1>
+            <div class="services-grid">
+        </div>
+             </div>
+    </section>
+    <table class="tabla-game">
+        <thead>
+            <tr>
+                <th>Fase</th>
+                <th>Acciones Clave</th>
+                <th>Entregable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tabla-azul">Pre-Producción</td>
+                <td>Concepto, Lore y GDD (Game Design Document)</td>
+                <td>Vertical Slice</td>
+            </tr>
+            <tr>
+                <td class="tabla-azul">Producción</td>
+                <td>Modelado, Programación y Audio</td>
+                <td>Versión Alfa / Beta</td>
+            </tr>
+            <tr>
+                <td class="tabla-azul">QA & Polishing</td>
+                <td>Pruebas de estrés y corrección de bugs</td>
+                <td>Master Gold</td>
+            </tr>
+            <tr>
+                <td class="tabla-azul">Live Ops</td>
+                <td>Mantenimiento y actualizaciones de contenido</td>
+                <td>DLC / Parches</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">¿Listo para empezar?</h2>
+            <div class="contact-info">
+                <p>📧 Correo: hello@lyngslab.com</p>
+                <p>📞 Teléfono: +56 9 9415 5590 </p>
+                <p>📍 Dirección: Distrito Tecnológico, Suite 404</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LYng's Lab. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
